@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Demo1</title>
+		<script src="https://cdn.bootcss.com/jquery/3.5.0/jquery.min.js"></script>
+		<link href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container" style="margin: 20px auto">
+            <div class="card">
+              <h5 class="card-header">Encode</h5>
+              <div class="card-body">
+                <form action="/encode" enctype='multipart/form-data' method='POST'>
+                <input type="file" name="file" style="margin-top:20px;"/>
+                <input type="submit" value="Upload" class="button-new" style="margin-top:15px;"/>
+                </form>
+              </div>
+            </div>
+             <br>
+            <div class="card">
+              <h5 class="card-header">Decode</h5>
+              <div class="card-body">
+                <form action="/decode" enctype='multipart/form-data' method='POST'>
+                <input type="file" name="file" style="margin-top:20px;"/>
+                <input type="submit" value="Upload" class="button-new" style="margin-top:15px;"/>
+                </form>
+              </div>
+            </div>
+            <br>
+            <nav>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Index</li>
+                <li class="breadcrumb-item">Result</li>
+              </ol>
+            </nav>
+        </div>
+
+
+
+	</body>
+</html>
